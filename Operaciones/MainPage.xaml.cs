@@ -7,46 +7,55 @@
         public MainPage()
         {
             InitializeComponent();
-            inicio = Convert.ToInt16(Inicia.Text);
-            fin = Convert.ToInt16(Fin.Text);
-
 
         }
 
         private void Aceptar_Clicked(object sender, EventArgs e)
         {
-            if (inicio != 0 && fin != 0)
+            try 
             {
-                if( Par.IsChecked)
+                inicio = Convert.ToInt16(Inicia.Text);
+                fin = Convert.ToInt16(Fin.Text);
+                
+                if (inicio != 0 && fin != 0)
                 {
-                    for (int i = inicio; i <= fin; i++)
+                    if (Par.IsChecked)
                     {
-                        if (i % 2 == 0)
+                        for (int i = inicio; i <= fin; i++)
                         {
-                            numero1.Items.Add(i.ToString());
-                            numero2.Items.Add(i.ToString());
+
+                            if (i % 2 == 0)
+                            {
+                                numero1.Items.Add(i.ToString());
+                                numero2.Items.Add(i.ToString());
+                            }
                         }
                     }
-                }
-                if (impar.IsChecked) {
-                    for (int i = inicio; i <= fin; i++)
-                    {
-                        if (i % 2 != 0)
+                    else if (impar.IsChecked) {
+                        for (int i = inicio; i <= fin; i++)
                         {
-                            numero1.Items.Add(i.ToString());
-                            numero2.Items.Add(i.ToString());
+                            if (i % 2 != 0)
+                            {
+                                numero1.Items.Add(i.ToString());
+                                numero2.Items.Add(i.ToString());
+                            }
                         }
+                    }
+                    else
+                    {
+                        DisplayAlert("Alerta", "Seleccionar Par o Impar", "Aceptar");
                     }
                 }
                 else
                 {
-                    DisplayAlert("Alerta", "Seleccionar Par o Impar", "Aceptar");
-                }
-            }
-            else
-            {
-                DisplayAlert("Alerta", "Ingresar Ambos Valores", "Aceptar");
+                    DisplayAlert("Alerta", "Ingresar Ambos Valores", "Aceptar");
 
+                }
+
+                Aceptar.IsEnabled = false;
+            }
+            catch (Exception ex) {
+                DisplayAlert("Alerta", ex.Message, "Aceptar");
             }
         }
 
