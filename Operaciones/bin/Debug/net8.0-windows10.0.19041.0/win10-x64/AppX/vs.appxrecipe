@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\chang\Downloads\Operaciones\Operaciones\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-03-06T02:20:02.900</Modified>
+      <Modified>2024-03-06T02:38:09.475</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\chang\Downloads\Operaciones\Operaciones\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-03-06T02:19:29.045</Modified>
+      <Modified>2024-03-06T02:36:29.175</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\chang\Downloads\Operaciones\Operaciones\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Operaciones.runtimeconfig.json">
       <PackagePath>Operaciones.runtimeconfig.json</PackagePath>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\chang\Downloads\Operaciones\Operaciones\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Operaciones.dll">
       <PackagePath>Operaciones.dll</PackagePath>
-      <Modified>2024-03-06T02:20:02.576</Modified>
+      <Modified>2024-03-06T02:38:09.134</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\chang\Downloads\Operaciones\Operaciones\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Operaciones.exe</PackagePath>
-      <Modified>2024-03-06T02:20:02.584</Modified>
+      <Modified>2024-03-06T02:38:09.139</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\chang\Downloads\Operaciones\Operaciones\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>

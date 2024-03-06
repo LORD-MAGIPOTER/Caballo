@@ -19,8 +19,16 @@
                 inicio = Convert.ToInt16(Inicia.Text);
                 fin = Convert.ToInt16(Fin.Text);
                 
+                if (fin <= -1 || inicio <= -1) {
+                    DisplayAlert("Alerta", "Seleccionar Valores positivos", "Aceptar");
+                }
+
                 if (inicio != 0 && fin != 0)
                 {
+                    if( fin < inicio)
+                    {
+                        DisplayAlert("Alerta", "El Valor final no puede ser menor al inicial", "Aceptar");
+                    }
                     if (Par.IsChecked)
                     {
                         for (int i = inicio; i <= fin; i++)
@@ -32,6 +40,7 @@
                                 numero2.Items.Add(i.ToString());
                             }
                         }
+                        Aceptar.IsEnabled = false;
                     }
                     else if (impar.IsChecked) {
                         for (int i = inicio; i <= fin; i++)
@@ -42,11 +51,13 @@
                                 numero2.Items.Add(i.ToString());
                             }
                         }
+                        Aceptar.IsEnabled = false;
                     }
                     else
                     {
                         DisplayAlert("Alerta", "Seleccionar Par o Impar", "Aceptar");
                     }
+                
                 }
                 else
                 {
@@ -54,7 +65,6 @@
 
                 }
 
-                Aceptar.IsEnabled = false;
             }
             catch (Exception ex) {
                 DisplayAlert("Alerta", ex.Message, "Aceptar");
