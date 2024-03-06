@@ -18,52 +18,61 @@
             {
                 inicio = Convert.ToInt16(Inicia.Text);
                 fin = Convert.ToInt16(Fin.Text);
-                
-                if (fin <= -1 || inicio <= -1) {
-                    DisplayAlert("Alerta", "Seleccionar Valores positivos", "Aceptar");
-                }
+
+
 
                 if (inicio != 0 && fin != 0)
                 {
-                    if( fin < inicio)
+                    if (fin <= -1 || inicio <= -1)
                     {
-                        DisplayAlert("Alerta", "El Valor final no puede ser menor al inicial", "Aceptar");
+                        DisplayAlert("Alerta", "Seleccionar Valores positivos", "Aceptar");
                     }
-                    if (Par.IsChecked)
-                    {
-                        for (int i = inicio; i <= fin; i++)
+                    else {
+                        if (fin < inicio)
                         {
+                            DisplayAlert("Alerta", "El Valor final no puede ser menor al inicial", "Aceptar");
+                        }
+                        else 
+                        { 
+                            if (Par.IsChecked)
+                            {
+                                for (int i = inicio; i <= fin; i++)
+                                {
 
-                            if (i % 2 == 0)
-                            {
-                                numero1.Items.Add(i.ToString());
-                                numero2.Items.Add(i.ToString());
+                                    if (i % 2 == 0)
+                                    {
+                                        numero1.Items.Add(i.ToString());
+                                        numero2.Items.Add(i.ToString());
+                                    }
+                                }
+                                Aceptar.IsEnabled = false;
                             }
-                        }
-                        Aceptar.IsEnabled = false;
-                    }
-                    else if (impar.IsChecked) {
-                        for (int i = inicio; i <= fin; i++)
-                        {
-                            if (i % 2 != 0)
+                            else if (impar.IsChecked)
                             {
-                                numero1.Items.Add(i.ToString());
-                                numero2.Items.Add(i.ToString());
+                                for (int i = inicio; i <= fin; i++)
+                                {
+                                    if (i % 2 != 0)
+                                    {
+                                        numero1.Items.Add(i.ToString());
+                                        numero2.Items.Add(i.ToString());
+                                    }
+                                }
+                                Aceptar.IsEnabled = false;
                             }
+                            else
+                            {
+                                DisplayAlert("Alerta", "Seleccionar Par o Impar", "Aceptar");
+                            }
+
                         }
-                        Aceptar.IsEnabled = false;
                     }
-                    else
-                    {
-                        DisplayAlert("Alerta", "Seleccionar Par o Impar", "Aceptar");
-                    }
-                
                 }
                 else
                 {
                     DisplayAlert("Alerta", "Ingresar Ambos Valores", "Aceptar");
 
                 }
+                
 
             }
             catch (Exception ex) {

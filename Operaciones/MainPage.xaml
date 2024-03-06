@@ -218,8 +218,9 @@
                                 HorizontalOptions="CenterAndExpand"
                                 VerticalOptions="CenterAndExpand"
                                 Margin="0,25,0,0"
-                                BackgroundColor="Transparent"
-                                Clicked="Limpiar_Clicked"></Button>
+                                BackgroundColor="Yellow"
+                                Clicked="Limpiar_Clicked"
+                                BorderWidth="1"></Button>
                     </StackLayout>
                     
                 </Frame>
