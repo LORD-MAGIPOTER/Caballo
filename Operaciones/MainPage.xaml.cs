@@ -3,6 +3,8 @@
     public partial class MainPage : ContentPage
     {
         int inicio, fin = 0;
+        int n1, n2, resultado;
+
 
         public MainPage()
         {
@@ -61,16 +63,96 @@
 
         private void numero1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            if(numero1.SelectedIndex != -1)
+            {
+                n1 = Convert.ToInt32(numero1.SelectedItem);
+            }
         }
 
         private void numero2_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            if (numero2.SelectedIndex != -1)
+            {
+                n2 = Convert.ToInt32(numero2.SelectedItem);
+            }
         }
 
+        // operacines a realizar
+        public int suma(int number1, int number2)
+        {
+            return (number1 + number2);
+        }
+
+        private void Limpiar_Clicked(object sender, EventArgs e)
+        {
+            Inicia.Text = "";
+            Fin.Text = "";
+            numero1.Items.Clear();
+            numero2.Items.Clear();
+            rsuma.Text = "";
+            rresta.Text = "";
+            rmultiplica.Text = "";
+            Aceptar.IsEnabled = true;
+        }
+
+        public int resta(int number1, int number2)
+        {
+            return (number1 - number2);
+        }
+        public int multi(int number1, int number2)
+        {
+            return (number1 * number2);
+        }
+        //metodo que regresa los resultados
         private void operar_Clicked(object sender, EventArgs e)
         {
+            if (n1 != 0 && n2 != 0)
+            {
+                if (Suma.IsChecked && Resta.IsChecked && Multiplicacion.IsChecked)
+                {
+
+                    rsuma.Text = suma(n1, n2).ToString();
+                    rresta.Text = resta(n1, n2).ToString();
+                    rmultiplica.Text = multi(n1, n2).ToString();
+                }
+                else if (Suma.IsChecked && Resta.IsChecked)
+                {
+
+                    rsuma.Text = "Resultado de suma " + suma(n1, n2).ToString();
+                    rresta.Text = "Resultado de resta " + resta(n1, n2).ToString();
+                }
+                else if (Resta.IsChecked && Multiplicacion.IsChecked)
+                {
+                    rresta.Text = "Resultado de resta " + resta(n1, n2).ToString();
+                    rmultiplica.Text = "Resultado de multiplicacion " + multi(n1, n2).ToString();
+                }
+                else if (Suma.IsChecked && Multiplicacion.IsChecked)
+                {
+
+                    rsuma.Text = "Resultado de suma " + suma(n1, n2).ToString();
+                    rmultiplica.Text = "Resultado de multiplicacion " + multi(n1, n2).ToString();
+                }
+                else if (Suma.IsChecked)
+                {
+                    rsuma.Text = "Resultado de suma " + suma(n1, n2).ToString();
+                }
+                else if (Resta.IsChecked)
+                {
+                    rresta.Text = "Resultado de resta " + resta(n1, n2).ToString();
+                }
+                else if (Multiplicacion.IsChecked)
+                {
+                    rmultiplica.Text = "Resultado de multiplicación " + multi(n1, n2).ToString();
+                }
+                else
+                {
+                    DisplayAlert("Alerta", "Seleccionar operación a realizar","Aceptar");
+                }
+
+            }
+            else {
+                DisplayAlert("Alerta", "Seleccionar Ambos Valores", "Aceptar");
+            }
 
         }
     }

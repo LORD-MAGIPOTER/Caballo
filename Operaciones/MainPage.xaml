@@ -210,7 +210,18 @@
                         <Label x:Name="rmultiplica"
                                Text=""
                                TextColor="Black" BackgroundColor="White"></Label>
+
+                        <Button x:Name="Limpiar"
+                                Text="LIMPIAR"
+                                TextColor="Black"
+                                FontAttributes="Bold"
+                                HorizontalOptions="CenterAndExpand"
+                                VerticalOptions="CenterAndExpand"
+                                Margin="0,25,0,0"
+                                BackgroundColor="Transparent"
+                                Clicked="Limpiar_Clicked"></Button>
                     </StackLayout>
+                    
                 </Frame>
 
             </Grid>
