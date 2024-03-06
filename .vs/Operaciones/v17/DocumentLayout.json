@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\chang\\Downloads\\Operaciones\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{965F63FF-C7D9-4F50-8EA0-04B4CB345984}|Operaciones\\Operaciones.csproj|c:\\users\\chang\\downloads\\operaciones\\operaciones\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{965F63FF-C7D9-4F50-8EA0-04B4CB345984}|Operaciones\\Operaciones.csproj|solutionrelative:operaciones\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{965F63FF-C7D9-4F50-8EA0-04B4CB345984}|Operaciones\\Operaciones.csproj|c:\\users\\chang\\downloads\\operaciones\\operaciones\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{965F63FF-C7D9-4F50-8EA0-04B4CB345984}|Operaciones\\Operaciones.csproj|solutionrelative:operaciones\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{965F63FF-C7D9-4F50-8EA0-04B4CB345984}|Operaciones\\Operaciones.csproj|c:\\users\\chang\\downloads\\operaciones\\operaciones\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{965F63FF-C7D9-4F50-8EA0-04B4CB345984}|Operaciones\\Operaciones.csproj|solutionrelative:operaciones\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 18,
+          "SelectedChildIndex": 19,
           "Children": [
             {
               "$type": "Bookmark",
@@ -94,28 +94,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\chang\\Downloads\\Operaciones\\Operaciones\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "Operaciones\\MainPage.xaml.cs",
               "ToolTip": "C:\\Users\\chang\\Downloads\\Operaciones\\Operaciones\\MainPage.xaml.cs",
               "RelativeToolTip": "Operaciones\\MainPage.xaml.cs",
-              "ViewState": "AQIAAH8AAAAAAAAAAADwv4wAAAARAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAnwAoAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-03T16:56:20.742Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MainPage.xaml",
               "DocumentMoniker": "C:\\Users\\chang\\Downloads\\Operaciones\\Operaciones\\MainPage.xaml",
               "RelativeDocumentMoniker": "Operaciones\\MainPage.xaml",
               "ToolTip": "C:\\Users\\chang\\Downloads\\Operaciones\\Operaciones\\MainPage.xaml",
               "RelativeToolTip": "Operaciones\\MainPage.xaml",
-              "ViewState": "AQIAAKkAAAAAAAAAAAAAAN4AAAA5AAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABMAAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-03T16:55:43.298Z"
+              "WhenOpened": "2024-03-03T16:55:43.298Z",
+              "EditorCaption": ""
             }
           ]
         },

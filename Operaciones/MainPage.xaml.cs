@@ -9,7 +9,6 @@
         public MainPage()
         {
             InitializeComponent();
-
         }
 
         private void Aceptar_Clicked(object sender, EventArgs e)
@@ -33,9 +32,11 @@
                             DisplayAlert("Alerta", "El Valor final no puede ser menor al inicial", "Aceptar");
                         }
                         else 
-                        { 
+                        {
+                            
                             if (Par.IsChecked)
                             {
+                                
                                 for (int i = inicio; i <= fin; i++)
                                 {
 
@@ -49,6 +50,7 @@
                             }
                             else if (impar.IsChecked)
                             {
+                               
                                 for (int i = inicio; i <= fin; i++)
                                 {
                                     if (i % 2 != 0)
