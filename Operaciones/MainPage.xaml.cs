@@ -111,6 +111,11 @@
             rsuma.Text = "";
             rresta.Text = "";
             rmultiplica.Text = "";
+            Par.IsChecked = false;
+            impar.IsChecked = false;
+            Suma.IsChecked = false;
+            Resta.IsChecked = false;
+            Multiplicacion.IsChecked = false;
             Aceptar.IsEnabled = true;
         }
 
@@ -130,9 +135,9 @@
                 if (Suma.IsChecked && Resta.IsChecked && Multiplicacion.IsChecked)
                 {
 
-                    rsuma.Text = suma(n1, n2).ToString();
-                    rresta.Text = resta(n1, n2).ToString();
-                    rmultiplica.Text = multi(n1, n2).ToString();
+                    rsuma.Text = "Resultado de suma " + suma(n1, n2).ToString();
+                    rresta.Text = "Resultado de resta " + resta(n1, n2).ToString();
+                    rmultiplica.Text = "Resultado de multiplicación " + multi(n1, n2).ToString();
                 }
                 else if (Suma.IsChecked && Resta.IsChecked)
                 {
